@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi — Coffee Toffee</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <style>
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide {
+            animation: slideDown 0.3s ease forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="w-full bg-white shadow-sm fixed z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <img src="./imeges/Aplikasi_2_2x.png" class="h-8">
+
+    <button id="menu-toggle" class="md:hidden p-2 text-gray-500 hover:text-yellow-500">
+      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <ul id="main-menu"
+      class="hidden md:flex flex-col md:flex-row md:items-center 
+             space-y-4 md:space-y-0 md:space-x-8 text-sm font-medium
+             absolute md:static top-full left-0 w-full bg-white md:w-auto 
+             shadow-lg md:shadow-none p-5 md:p-0">
+
+      <li><a href="home.html" class="block  text-gray-600  hover:text-yellow-500 font-bold">HOME</a></li>
+      <li><a href="kopi.html" class="block text-gray-600 hover:text-yellow-500 font-bold">KOPI</a></li>
+      <li><a href="berita.html" class="block text-gray-600 hover:text-yellow-500 font-bold">BERITA</a></li>
+      <li><a href="kontak.html" class="block text-gray-600 hover:text-yellow-500 font-bold">KONTAK</a></li>
+    </ul>
+
+  </div>
+</nav>
+<!-- HERO -->
+<!-- HERO -->
+<section class="bg-gray-100 text-center pt-16 pb-10" data-aos="fade-up">
+  <h3 class="text-yellow-400 text-sm pt-5"><b>our coffee</b></h3>
+  <h1 class="text-3xl md:text-4xl font-bold text-gray-600">Menu Kopi Kami</h1>
+  <h3 class="text-yellow-500 text-xl mt-4">══════</h3>
+</section>
+
+<!-- KOMITMEN -->
+<section class="py-12 md:py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row gap-8 items-center">
+
+      <div class="w-full md:w-1/2">
+        <p class="text-2xl md:text-3xl text-gray-500 font-medium mb-3">
+          <b>KOMITMEN DALAM IDEALISME</b>
+        </p>
+        <p class="text-sm text-gray-400 mb-6">
+          Selaras dengan kampanye kami : "Yes, I Drink Indonesian Coffee" maka Coffee Tofee berkomitment HANYA menggunakan biji - biji kopi terbaik Indonesia. Lagipula kopi Indonesia tidak kalah juga koq dengan kopi dari luar negeri. 
+        </p>
+        <p class="text-sm text-gray-400 mb-6">
+          Kami menggunakan dua varian kopi : Arabika dan Robusta. Untuk arabika kami menggunakan grade "Specialty Arabica", sedangkan untuk robusta kami menggunakan grade "Fine Robusta". Kualitas terbaik di kelasnya.
+        </p>
+        <p class="text-sm text-gray-400 mb-6">
+          Saat ini kami menyediakan 8 origin terbaik dari berbagai perkebunan yang tersebar di Indonesia, salah satunya dari perkebunan kami sendiri di lereng Gunung Arjuno, Jawa Timur. Dengan berjalannya waktu, kami berencana untuk menambah varian coffee origin ini agar masyarakat Indonesia dapat menikmati aks biji - biji kopi terbaik dari seluruh Indonesia dengan harga terjangkau dan dengan mudah.
+        </p>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/83b/83b2238cd6fcc6c8785e3863708ca620/Coffee_Toffee_-_Komitmen_dalam_Idealisme_02c_2x.jpg"
+          class="w-full h-auto object-cover rounded-lg">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KUALITAS -->
+<section class="py-12 md:py-16 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-400 uppercase mb-3">KUALITAS</h1>
+    <div class="w-24 h-2 bg-yellow-500 mb-4"></div>
+    <p class="text-sm text-gray-400 max-w-3xl">
+      Kami memahami bahwa kualitas aroma dan rasa dari biji kopi adalah keutamaan,. Kami di Coffee Toffee menyadari hal ini, oleh karena itu kami memastikan bahwa setiap proses perjalanan biji kopi, mulai dari pemetikan sampai penyeduhan memegang peranan penting dalam mentukan kualitas satu cangkir kopi kamu.
+    </p>
+  </div>
+</section>
+
+<!-- 3 CARD -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-12 lg:px-20" data-aos="fade-up">
+
+  <div>
+    <img src="https://cdn.bitrix24.id/b14044525/landing/4b0/4b0dd7a794074f694a017ca5629a503e/01_Coffee_Toffee_-_Our_Bean_-_Biji_Kopi_02_2x.jpg"
+      class="w-full h-56 object-cover rounded-md mb-6">
+    <h3 class="text-2xl font-bold mb-2">in-bound QC</h3>
+    <p class="text-sm text-gray-400">Pengecekan kualitas dimulai pertama kali ketika biji kopi green bean datang di fasilitas gudang dan pemanggangan.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.bitrix24.id/b14044525/landing/5d2/5d24e7726f8d55a532d3fc23cea3c338/02_Coffee_Toffee_-_Coffee_based_drink_02_2x.jpg"
+      class="w-full h-56 object-cover rounded-md mb-6">
+    <h3 class="text-2xl font-bold mb-2">cupping score</h3>
+    <p class="text-sm text-gray-400">Kami melakukan cupping score terhadap dengan metode random sampling untuk biji - biji kopi yang kami terima dari para petani dan suplier.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.bitrix24.id/b14044525/landing/04d/04dc5af81ad5b85830e8b40d6ba087fd/03_Coffee_Toffee_-_Non_Coffee_Drinks_02_2x.jpg"
+      class="w-full h-56 object-cover rounded-md mb-6">
+    <h3 class="text-2xl font-bold mb-2">freshly roast</h3>
+    <p class="text-sm text-gray-400">Kami memastikan kamu mendapatkan biji kopi dengan tingkat kesegaran terbaik melalui panggangan terbaru di setiap gerai Coffee Toffee</p>
+  </div>
+
+</section>
+<section class="py-12 md:py-16 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-400 uppercase mb-3">PEMANGGANGAN IN-HOUSE</h1>
+    <div class="w-24 h-2 bg-yellow-500 mb-4"></div>
+    <p class="text-sm text-gray-400 max-w-3xl">
+      Proses pemanggangan adalah salah satu proses kunci dalam mendapatkan  dan menjaga kualitas terbaik biji - biji kopi Coffee Toffee. Oleh karena itu, dimulai di tahun 2009 kami memutuskan untuk membangun fasilitas pemanggangan kopi kami sendiri serta mendidik dan mengembangkan tim "Coffee Experts" di HQ Coffee Toffee. Hal ini kami lakukan untuk memastikan bahwa setiap biji kopi yang dikirim ke setiap gerai Coffee Toffee adalah biji kopi yang bisa membawa dengan bangga nama baik  dari kualitas biji kopi Indoenesia.
+    </p>
+  </div>
+</section>
+
+<!-- FOTO GRID HOVER -->
+<section class="py-10 bg-white" data-aos="fade-up">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-12 lg:px-20">
+
+    <div class="aspect-[4/3] relative overflow-hidden rounded-xl group cursor-pointer">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/db2/db2bb4b6a4b962e712d35d8c7e20bcaa/Coffee_Toffee_-_Green_Bean_masuk_Hopper_01b_1x.jpg"
+        class="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-110">
+      <div class="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition">
+        GOOD QUALITY OF IDN COFFEE
+      </div>
+    </div>
+
+    <div class="aspect-[4/3] relative overflow-hidden rounded-xl group cursor-pointer">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/37a/37a76d620825f1d92edc362a46882257/Coffee_Toffee_-_Roasting_Facility_-_Roaster_Coffee_Expert_03c_1x.jpg"
+        class="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-110">
+      <div class="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition">
+        ROASTING : ART X SKILL
+      </div>
+    </div>
+
+    <div class="aspect-[4/3] relative overflow-hidden rounded-xl group cursor-pointer">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/d6d/d6d6bc99202497ffce863eb03055854b/Coffee_Toffee_-_Roasting_Facility_-_Roaster_Coffee_Expert_04b_2x.jpg"
+        class="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-110">
+      <div class="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition">
+        COFFEE EXPERT
+      </div>
+    </div>
+
+    <div class="aspect-[4/3] relative overflow-hidden rounded-xl group cursor-pointer">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/4d7/4d706049878b94812ecf63177e1c00bb/Coffee_Toffee_-_Roasting_Facility_-_Roaster_Coffee_Expert_06b_1x.jpg"
+        class="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-110">
+      <div class="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:opacity-100 transition">
+        ROASTING PERFECTION
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FULL IMAGE -->
+<section class="bg-gray-100 py-10 flex justify-center" data-aos="fade-up">
+  <img class="w-full max-w-5xl px-4 md:px-12 object-cover"
+    src="./imeges/Screenshot 2025-11-28 140052.png">
+</section>
+<section class="py-12 md:py-16 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-400 uppercase mb-3">kebaikan dari awal</h1>
+    <div class="w-24 h-2 bg-yellow-500 mb-4"></div>
+    <p class="text-sm text-gray-400 max-w-3xl">
+      Kami percaya bahwa secangkir kopi yang kamu minum di gerai Coffee Toffee, dengan kenikmatan dan cita rasa terbaiknya berawal dari bagaimana kita memastikan hasil panen terbaik dari perkebunan kopi.
+    </p>
+  </div>
+</section>
+
+<!-- GRID 6 LANGKAH -->
+<section class="bg-white py-10" data-aos="fade-up">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-12 lg:px-20">
+
+    <!-- LANGKAH 1 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/40c/40c4500713c522d209280ac180a6cfe9/Coffee_Toffee_-_Perkebunan_-_Bibit_Kopi_02_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 1 : BIBIT YANG BAIK</h3>
+      <p class="text-sm text-gray-400">Langkah pertama untuk mendapatkan panen terbaik adalah pemilihan bibit terbaik, seperti varietas andungsari, typica, bourbon, dll. Bibit kopi yang berumur 7 bulan langsung di tanam dan para mitra tani kami melakukan pemupukan tanaman secara rutin dengan pupuk organik</p>
+    </div>
+
+    <!-- LANGKAH 2 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/319/3193ff0d40cfd5183572cb67d694627c/Coffee_Toffee_-_Perkebunan_-_Petik_Merah_01_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 2 : PETIK MERAH</h3>
+      <p class="text-sm text-gray-400">Buah kopi kita petik satu per satu dengan tangan petani langsung, tidak dipetik secara bersamaan (rampasan/racutan). Proses petik merah ini berguna untuk menjaga kesehatan tanaman kopi yang berbuah di panen berikutnya.</p>
+    </div>
+
+    <!-- LANGKAH 3 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/fe8/fe820c57c52f789ee65756722fde5325/Coffee_Toffee_-_Perkebunan_-_Panen_Merah_01_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 3 : SORTASI CERI</h3>
+      <p class="text-sm text-gray-400">Proses penting selanjutnya ada sortasi ceri. Kami melakukan dengan merendam buah kopi, bila mengapung di permukaan air maka buah kopi memiliki cacat/berpenyakit, dan buah kopi yang tenggelam adalah buah kopi (merah) berkualitas baik yang kita pilih.</p>
+    </div>
+
+    <!-- LANGKAH 4 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/2d7/2d7939a7caa565558e966008d209953d/Coffee_Toffee_-_Perendaman_Kopi_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 4 : PENGOLAHAN</h3>
+      <p class="text-sm text-gray-400">Berikutnya kita proses pemisahan biji dengan kulit dagingnya dan dikeringkan sampai dengan kelembabannya + 10-13%. Proses pengolahan ini bermacam-macam mulai dari natural process, full washed process, semi washed process dan honey process. Pilihan proses pengolahan ini kami lakukan untuk mendapatkan rasa dan karakter mutu terbaik dari tiap single origin kopi.</p>
+    </div>
+
+    <!-- LANGKAH 5 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/a05/a05d2a4c029a0c6a1f2569e0e4ab6d8d/Coffee_Toffee_-_Sortasi_Biji_Hijau_01_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 5 : SORTASI BIJI</h3>
+      <p class="text-sm text-gray-400">Kami melakukan sortasi biji hijau dan melakukan analisa fisik green bean coffee dengan mengacu pada standart SCAA green coffee defect handbook, hal ini kita lakukan untuk mengetahui dan memisahkan primary/secondary defect dengan green bean coffee yang berkualitas baik.</p>
+    </div>
+
+    <!-- LANGKAH 6 -->
+    <div>
+      <img src="https://cdn.bitrix24.id/b14044525/landing/ede/edefdad7a62033632d2326abd251c0a5/Coffee_Toffee_-_Penyimpanan_yg_Baik_01_2x.jpg"
+        class="w-full h-56 object-cover mb-4">
+      <h3 class="font-bold mb-2">LANGKAH 6 : PENYIMPANAN</h3>
+      <p class="text-sm text-gray-400">Salah satu hal penting sebelum green bean coffee di roasting adalah menyimpannya dengan baik, agar kualitas tetap terjaga. Ada 3 hal penting yang kita lakukan yaitu: menyimpan pada suhu tertentu yaitu 20-27 Celcius, menggunakan wadah berpori yang tidak terkontaminasi (karung goni bersih), dan tidak terkena matahari secara langsung.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="bg-white py-2 text-center">
+    <p class="text-gray-500">© 2020 All rights reserved.</p>
+  </div>
+  <div class="bg-[#1f1f1f] text-gray-300 py-2 text-center">
+    <p>Powered by <b>Bitrix24</b></p>
+    <a href="#" class="underline">Report abuse</a>
+  </div>
+</footer>
+
+<!-- JS SCRIPT -->
+
+<script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: true });</script>
+</body>
+</html>

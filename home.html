@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOFFEE COFFEE</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide { animation: slideDown 0.3s ease forwards; }
+  </style>
+</head>
+
+<body class="bg-white">
+
+<!-- NAVBAR -->
+<nav class="w-full bg-white shadow-sm fixed z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <img src="./imeges/Aplikasi_2_2x.png" class="h-8">
+
+    <button id="menu-toggle" class="md:hidden p-2 text-gray-500 hover:text-yellow-500">
+      <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <ul id="main-menu"
+      class="hidden md:flex flex-col md:flex-row md:items-center 
+             space-y-4 md:space-y-0 md:space-x-8 text-sm font-medium
+             absolute md:static top-full left-0 w-full bg-white md:w-auto 
+             shadow-lg md:shadow-none p-5 md:p-0">
+
+      <li><a href="home.html" class="block  text-gray-600  hover:text-yellow-500 font-bold">HOME</a></li>
+      <li><a href="kopi.html" class="block text-gray-600 hover:text-yellow-500 font-bold">KOPI</a></li>
+      <li><a href="berita.html" class="block text-gray-600 hover:text-yellow-500 font-bold">BERITA</a></li>
+      <li><a href="kontak.html" class="block text-gray-600 hover:text-yellow-500 font-bold">KONTAK</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+<div class="relative w-full overflow-hidden pt-16">
+  <div id="carousel" class="flex transition-transform duration-700">
+
+    <img src="./imeges/Screenshot 2025-11-24 194931.png" class="w-full flex-shrink-0">
+    <img src="./imeges/Screenshot 2025-11-24 194954.png" class="w-full flex-shrink-0">
+    <img src="./imeges/Screenshot 2025-11-24 195017.png" class="w-full flex-shrink-0">
+    <img src="./imeges/Screenshot 2025-11-24 195108.png" class="w-full flex-shrink-0">
+    <img src="./imeges/Screenshot 2025-11-24 195140.png" class="w-full flex-shrink-0">
+    <img src="./imeges/Screenshot 2025-11-24 195305.png" class="w-full flex-shrink-0">
+
+  </div>
+
+  <button id="prev"
+    class="absolute top-1/2 left-3 -translate-y-1/2 text-white text-xl w-10 h-10 flex items-center justify-center">
+    < </button>
+
+  <button id="next"
+    class="absolute top-1/2 right-3 -translate-y-1/2 text-white text-xl w-10 h-10 flex items-center justify-center">
+    >
+  </button>
+</div>
+
+<!-- OUR MENU -->
+<section class="text-center mt-10 px-6" data-aos="fade-up">
+  <h3 class="text-yellow-400 text-xl"><b>from the best indonesian specialty coffee</b></h3>
+  <h3 class="text-5xl text-gray-400 mt-3"><b>our menu</b></h3>
+  <h3 class="text-yellow-400 mt-3">════════</h3>
+</section>
+
+<!-- GRID MENU -->
+<section class="w-full px-6 mt-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    <!-- 4 CARD (responsiv OK) -->
+    <!-- Card 1 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/4b0/4b0dd7a794074f694a017ca5629a503e/01_Coffee_Toffee_-_Our_Bean_-_Biji_Kopi_02_2x.jpg"
+           class="w-full h-56 object-cover rounded-md mb-6">
+      <h3 class="text-2xl font-bold mb-2">OUR BEANS</h3>
+      <p class="text-gray-600">Biji kopi grade Specialty Arabica dan Fine Robusta dari 9 perkebunan terbaik Indonesia</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/5d2/5d24e7726f8d55a532d3fc23cea3c338/02_Coffee_Toffee_-_Coffee_based_drink_02_2x.jpg"
+           class="w-full h-56 object-cover rounded-md mb-6">
+      <h3 class="text-2xl font-bold mb-2">COFFEE-BASED DRINKS</h3>
+      <p class="text-gray-600">Dari minunan tradisional berbasis espresso sampai berbagai minuman racikan kopi terkini.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/04d/04dc5af81ad5b85830e8b40d6ba087fd/03_Coffee_Toffee_-_Non_Coffee_Drinks_02_2x.jpg"
+           class="w-full h-56 object-cover rounded-md mb-6">
+      <h3 class="text-2xl font-bold mb-2">NON-COFFEE</h3>
+      <p class="text-gray-600">Kami juga memiliki menu non-coffee untuk kamu yang ingin pilihan lain selain kopi dan untuk anak - anak..</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/c2c/c2cb0be94f3715677f67326a554017da/04_Coffee_Toffee_-_Food_n_Snack_03_-_Cordon_Bleu_2x.jpg"
+           class="w-full h-56 object-cover rounded-md mb-6">
+      <h3 class="text-2xl font-bold mb-2">FOOD & SNACK</h3>
+      <p class="text-gray-600">Berbagai macam makanan ringan sampai makanan utama siap menemani secangkir kopimu.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERITA KAMI -->
+<section class="bg-gray-50 mt-12 p-6 md:p-12" data-aos="fade-up">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:gap-16">
+
+    <div class="md:w-1/2">
+      <h1 class="text-4xl font-extrabold text-gray-500 mb-6">CERITA KAMI</h1>
+
+      <p class="text-gray-500 mb-4">Dimulai dari satu outlet kecil di depan satu minimarket di kota Surabaya, kami berkembang menjadi jaringan kedai kopi nasional dengan cabang tersebar di banyak kota di Indonesia.</p>
+      <p class="text-gray-500 mb-4">Di tahun 2012, kami adalah pionir dan penggagas dalam gerakan bangga terhadap kopi Indonesia dengan kampanye "Yes I Drink Indonesian Coffee."</p>
+      <p class="text-gray-500 mb-6">Di tahun 2017, kami mendapatkan Penghargaan Indonesia Franchise Award dari kementerian Perdagangan sebagai Pemenang Nasional. Penghargaan ini serta diserahkan langsung oleh bapak Presiden RI Joko Widodo.Read more...</p>
+
+      <div class="flex gap-4">
+        <button class="bg-yellow-500 px-6 py-2 rounded-lg font-bold">AWAL MULA</button>
+        <button class="bg-yellow-500 px-6 py-2 rounded-lg font-bold">KAMPANYE</button>
+      </div>
+    </div>
+
+    <div class="md:w-1/2 flex justify-end mt-6 md:mt-0">
+      <img src="https://cdn.bitrix24.id/b14044525/landing/7ba/7bab5dccad7b1d57c7c8112c420ff41e/Coffee_Toffee_-_Our_Story_1x.png">
+    </div>
+
+  </div>
+</section>
+
+<!-- TAKE US WITH YOU -->
+<section class="text-center py-8" data-aos="fade-up">
+  <h3 class="text-yellow-400 text-xl"><b>take us with you</b></h3>
+  <h3 class="text-4xl text-gray-500 mt-3"><b>BAWA KAMI KESEHARIANMU</b></h3>
+  <h3 class="text-yellow-400 mt-3">════════</h3>
+</section>
+
+<!-- 4 ICONS -->
+<section class="bg-white py-12 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+
+    <!-- ikon 1 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="./imeges/Screenshot 2025-11-27 203842.png" class="mx-auto w-24 mb-4">
+      <h3 class="font-bold text-xl">CATERING</h3>
+      <p class="text-gray-500 text-sm mt-2">Kamu bisa membawa Coffee Toffee dalam acara kantor atau selebrasi pribadi kamu</p>
+    </div>
+
+    <!-- ikon 2 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="./imeges/Screenshot 2025-11-27 203851.png" class="mx-auto w-24 mb-4">
+      <h3 class="font-bold text-xl">COFFEE PACK</h3>
+      <p class="text-gray-500 text-sm mt-2">Dalam kemasan 200gr, kamu bisa menikmati kopi specialty arabika Coffee Toffee di rumah.</p>
+    </div>
+
+    <!-- ikon 3 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="./imeges/Screenshot 2025-11-27 203858.png" class="mx-auto w-24 mb-4">
+      <h3 class="font-bold text-xl">MERCHANDISE</h3>
+      <p class="text-gray-500 text-sm mt-2"> Berbagai pilihan merchandise utk menunjukkan kecintaan (atau kegilaan) kamu ke dunia kopi</p>
+    </div>
+
+    <!-- ikon 4 -->
+    <div class="text-center" data-aos="fade-up">
+      <img src="./imeges/Screenshot 2025-11-27 203935.png" class="mx-auto w-20 mb-4">
+      <h3 class="font-bold text-xl">HAMPERS</h3>
+      <p class="text-gray-500 text-sm mt-2">Kirimkan satu kotak berisi biji kopi, minuman favorit dia serta satu mug kopi untuk orang spesial kamu.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="text-center mt-10" data-aos="fade-up">
+  <h3 class="text-yellow-400 text-xl"><b>MOMENTS</b></h3>
+  <h3 class="text-4xl text-gray-500 mt-3"><b>GALLERY</b></h3>
+  <h3 class="text-yellow-400 mt-3">════════</h3>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
+
+      <!-- FOTO 1 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/83d/83d41b5e852f4e4453d050db3eefe3ba/Coffee_Toffee_-_Gallery_01b_-_Menyerahkan_gelas_take_away_2x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 2 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/410/4106d5147ec1b026daeedd1ea72ae5d3/Coffee_Toffee_-_Gallery_02b_-_Barista_Senyuman_Hangat_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 3 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/de6/de6e5e30d25c19b6cba2653cfa61df6d/Coffee_Toffee_-_Gallery_04b_-_Take_Away_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 4 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/f97/f97569b8085540f7cd768b003720e451/Coffee_Toffee_-_Gallery_03b_-_Happy_Customer_2x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 5 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/1b0/1b05c5c9c6bda019158adf36dffa01af/Coffee_Toffee_-_Gallery_05b_-_Barista_Brewing_1x.jpg" class="w-full h-full object-cover grayscale scale-95 transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 6 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/ff3/ff30bcff3eaf4435381e1b418bcb8c11/Coffee_Toffee_-_Gallery_06b_-_Pelayanan_Hangat_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 7 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/c92/c9299b8a8020afb495f9d6cb6fe9caa4/Coffee_Toffee_-_Gallery_07b_-_Pride_in_every_cup_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 8 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/ed9/ed91aee6adb75ea1bb9765175043d023/Coffee_Toffee_-_Gallery_08b_-_Coffee_Bean_with_Heart_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 9 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/c1a/c1a0ed68ffe547097375024e9b5ee61c/Coffee_Toffee_-_Gallery_10b_-_Coffee_Toffee_Logo_Art_1x.jpg" class="w-full h-full object-cover grayscale scale-95 transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 10 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/713/71374217a1e039e6b8ca376aa7f090e4/Coffee_Toffee_-_Gallery_10b_-_Iced_Coffee_for_Everyone_1x.jpg" class="w-full h-full object-cover grayscale scale-95 transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 11 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/a1e/a1ee3b306a3086be52a94b6bafe81dab/Coffee_Toffee_-_Gallery_11b_-_Manual_Brew_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+      <!-- FOTO 12 -->
+      <div class="aspect-square overflow-hidden rounded-xl group">
+        <img src="https://cdn.bitrix24.id/b14044525/landing/6b4/6b4035305d5e34824f9d16eb807c5b62/Coffee_Toffee_-_Gallery_12b_-_Sign_Pole_in_Sky_1x.jpg" class="w-full h-full object-cover grayscale scale-95  transform transition-all duration-500 group-hover:grayscale-0 group-hover:scale-75" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT US -->
+<section class="bg-yellow-500 text-center py-10" data-aos="fade-up">
+  <h3 class="text-white text-sm"><b>GET UP CLOSE AND PERSONAL</b></h3>
+  <h3 class="text-4xl text-white mt-3"><b>CONTACT US</b></h3>
+  <h3 class="text-white mt-3"><b>════════</b></h3>
+</section>
+
+<!-- CONTACT ICONS -->
+<section class="bg-white py-12">
+  <div class="flex flex-wrap w-[90%] max-w-7xl mx-auto justify-between ">
+
+    <!-- Instagram -->
+    <div class="w-1/2 md:w-1/4 p-4 text-center">
+      <i class="fa fa-instagram text-yellow-500" style="font-size:48px"></i>
+      <p class="text-gray-500">INSTAGRAM</p>
+      <a href="#" class="text-yellow-600 font-bold">@coffeetoffeeidn</a>
+    </div>
+
+    <!-- Facebook -->
+    <div class="w-1/2 md:w-1/4 p-4 text-center">
+      <i class="fa fa-facebook-square text-yellow-500" style="font-size:48px"></i>
+      <p class="text-gray-500">FACEBOOK</p>
+      <a href="#" class="text-yellow-600 font-bold">Coffee Toffee Indonesia</a>
+    </div>
+
+    <!-- Email -->
+    <div class="w-1/2 md:w-1/4 p-4 text-center">
+      <i class="fa fa-envelope text-yellow-500" style="font-size:48px"></i>
+      <p class="text-gray-500">EMAIL</p>
+      <a href="mailto:coffeetoffeeidn@gmail.com"
+         class="text-yellow-600 font-bold">coffeetoffeeidn@gmail.com</a>
+    </div>
+
+    <!-- TikTok -->
+    <div class="w-1/2 md:w-1/4 p-4 text-center">
+      <img src="./imeges/tik-tok (4).png" class="mx-auto w-12">
+      <p class="text-gray-500">TIKTOK</p>
+      <a href="#" class="text-yellow-600 font-bold">coffeetoffeeidn</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="bg-white py-2 text-center">
+    <p class="text-gray-500">© 2020 All rights reserved.</p>
+  </div>
+
+  <div class="bg-[#1f1f1f] text-gray-300 py-2 text-center">
+    <p>Powered by <b>Bitrix24</b></p>
+    <a href="#" class="underline">Report abuse</a>
+  </div>
+</footer>
+
+<!-- JS SCRIPT -->
+<script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: true });</script>
+
+</body>
+</html>
